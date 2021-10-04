@@ -1,0 +1,392 @@
+/* FONT-FAMILY LOCAL */
+
+@font-face {
+    font-family: 'LiberationSans-Regular';
+    src: url('fonts/LiberationSans-Regular-webfont.ttf')
+}
+
+@font-face {
+    font-family: 'LiberationSans-Bold';
+    src: url('fonts/LiberationSans-Bold-webfont.ttf')
+}
+
+/* MINI RESET */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: inherit;
+}
+
+/* BODY */
+
+body {
+    font-family: 'LiberationSans-Regular', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    color: rgb(34, 32, 32);
+    display: flex;
+    flex-direction: column;
+}
+
+/* PARTIE HEADER */
+
+header {
+    background-color: #f0f1f3;
+    flex: 1;
+}
+
+.header-container {
+    width: 70vw;
+    margin: 2vh auto;
+}
+
+.top-logo-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bonjour {
+    margin-top: 1vh;
+    font-size: 1.6vw;
+}
+
+.bottom-logo-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 4;
+    font-size: 1.3vw;
+}
+
+.title-logo {
+    flex: 6;
+    font-size: 1.7vw;
+}
+
+.orange {
+    color: #e7a02e;
+}
+
+/* PARTIE MAIN */
+
+main {
+    background-color: #1b1c1d;
+    flex: 9;
+}
+
+.main-container {
+    width: 70vw;
+    margin: 2.5vh auto 0 auto;
+}
+
+    /******* PARTIE IMAGE BOXE *******/
+
+.boxe-img-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.boxe-img-container > img {
+    width: 100%;
+
+}
+
+    /******* PARTIE PRODUITS *******/
+
+.products {
+    background-color: #f2f3f4;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-articles {
+    display: flex;
+}
+
+.top-left, .top-right, .bottom-left, .bottom-right {
+    flex: auto;
+    margin: 0 2vw;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bottom-articles {
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.product-img-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.titre-gants {
+    position: absolute;
+    bottom: 3.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    font-size: 1.3vw;
+    text-transform: uppercase;
+}
+
+.product-img-container > img {
+    width: 100%;
+}
+
+.promo {
+    position: absolute;
+    top: 5%;
+    right: -7%;
+    padding: 0.9vh 1.3vw;
+    background-color: #28292a;
+    border-radius: 8px;
+    font-size: 1.4vw;
+    font-family: 'LiberationSans-Bold';
+}
+
+.link-price {
+    margin: 2vh 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.link-price > a {
+    flex: 4;
+    text-align: center;
+    padding: 1vh 1.2vw;
+    background-color: #28292a;
+    color: white;
+    font-size: 1.3vw;
+}
+
+.price-before {
+    flex: 2;
+    text-align: right;
+    font-size: 2vw;
+    text-decoration: line-through;
+    font-family: 'LiberationSans-Bold';
+}
+
+.price-now {
+    flex: 2;
+    text-align: right;
+    font-size: 2vw;
+    font-family: 'LiberationSans-Bold';
+}
+
+/* PARTIE FOOTER */
+
+footer {
+    background-color: #363738;
+    flex: 2;
+}
+
+.footer-container {
+    padding-top: 8vh;
+    padding-bottom: 1vh;
+    width: 70vw;
+    margin: 1vh auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.links-contact {
+    padding: 3vh 1vw;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -65%);
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1vw;
+}
+
+.grey {
+    color: #d1d2d3;
+}
+
+.services {
+    display: flex;
+    color: white;
+    border-bottom: solid 2.5px #838485;
+    padding-bottom: 3vh;
+}
+
+.description {
+    text-align: center;
+    font-size: 0.9vw;
+    padding: 1vh 2vw;
+    margin-top: 2vh;
+}
+
+.services > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media {
+    margin: 7vh 0;
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    color: white;
+    font-size: 1vw;
+}
+
+/************ PARTIE RESPONSIVE (MOBILE/TABLETTE) *************/
+
+
+@media screen and (max-width: 870px) {
+
+
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 2vh 2vw;
+        position: relative;
+    }
+    
+    .top-logo-name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-logo {
+        transform: translateY(-100%);
+        font-size: 4vw;
+    }
+
+    .bottom-logo-nav {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .bonjour {
+        text-align: center;
+        transform: translate(0, 100%);
+        font-size: 2.3vw;
+    }
+
+    .nav {
+        width: 100vw;
+        justify-content: space-around;
+        position: absolute;
+        bottom: 0;
+        font-size: 2vw;
+    }
+
+    .img-boxe {
+        display: none;
+    }
+
+    .boxe-img-container {
+        height: 30vh;
+        background-image: url('images/header-page-catalogue.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    .top-articles {
+        flex-direction: column;
+    }
+
+    .bottom-articles {
+        flex-direction: column;
+    }
+
+    .top-left, .top-right, .bottom-left, .bottom-right {
+        margin: 1vh 10vw;
+    }
+
+    .promo {
+        font-size: 3vw;
+        padding: 0.7vh 1.7vw;
+        font-family: 'LiberationSans-Bold';
+        right: -10%;
+    }
+
+    .link-price > a {
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+
+    .price-before, .price-now {
+        font-size: 3vw;
+        font-family: 'LiberationSans-Bold';
+    }
+
+    .titre-gants {
+        font-size: 2vw;
+    }
+
+    .links-contact {
+        padding: 2vh 1vw;
+        width: 85%;  
+}
+
+    .links {
+        font-size: 1.5vw;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .description {
+        width: 50vw;
+        font-size: 2.2vw;
+    }
+
+    .services > div {
+        margin: 3vh 0vw;
+    }
+
+    .social-media {
+        width: 40vw;
+    }
+
+    .copyright {
+        font-size: 2vw;
+    }
+}
